@@ -1,0 +1,4 @@
+body { margin: 0; padding: 0; background: #fafafa; }
+input, button { padding: 6px 8px; border-radius: 6px; border: 1px solid #ccc; }
+button { cursor: pointer; }
+table th, table td { padding: 8px; }
