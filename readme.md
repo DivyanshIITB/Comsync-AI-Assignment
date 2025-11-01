@@ -9,9 +9,9 @@ while the frontend provides a simple interface for managing and viewing schedule
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 🧩 1. Backend Setup (Flask)
+### 1. Backend Setup (Flask)
 
 #### Prerequisites
 - Python 3.8+
@@ -63,28 +63,44 @@ Frontend starts on:
 ## 3. Testing the Application
 
 Open the frontend in your browser (http://localhost:3000).
+
 Enter a phone number and optional schedule time.
+
 Click Start Now (for immediate initiation) or Schedule (for future time).
+
 View all scheduled and initiated calls in the list below.
+
 The backend handles mock API interactions and updates statuses.
 
 ## Backend Design (Flask)
 
 The backend (app.py) handles:
 
+
 Scheduling of mock calls
+
 Triggering calls at appropriate times
+
 Storing and retrieving schedules in SQLite
+
 Communicating with a mock external call API
 
 
 ## Frontend Design (React)
 
 Simple UI built with React
+
 Uses fetch to interact with backend REST APIs
+
 Supports both "Start Now" and "Schedule Later" actions
+
 Displays current status and external call ID for each entry
+
 Automatically refreshes the schedule list after every operation
+
+## A view of the frontend:
+<img width="1913" height="1025" alt="image" src="https://github.com/user-attachments/assets/7192c252-4815-477a-bae5-0106229a2d41" />
+
 
 
 ## Design Decisions & Trade-offs:
@@ -102,8 +118,13 @@ Automatically refreshes the schedule list after every operation
 ## Tech Stack
 
 Frontend: React (create-react-app)
+
 Backend: Flask + SQLAlchemy + APScheduler
+
 Database: SQLite (auto-generated)
+
 API Integration: Mock API endpoints (POST and GET)
+
 Language: Python, JavaScript (ES6)
+
 
